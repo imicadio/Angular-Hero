@@ -9,15 +9,14 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import 'hammerjs';
 import { MaterialModule } from '@angular/material';
-import { EventsListComponent } from './events/events-list.component'
-
-
-
+import { EventsListComponent } from './events/events-list.component';
+import { EventThumbnailCoponent } from './events/event-thumbnail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    EventsListComponent
+    EventsListComponent,
+    EventThumbnailCoponent
   ],
   imports: [
     BrowserModule,

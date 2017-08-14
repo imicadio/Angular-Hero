@@ -12,6 +12,7 @@ import { MaterialModule } from '@angular/material';
 import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnailCoponent } from './events/event-thumbnail.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { SharedService } from './events/shared/shared.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     MdCheckboxModule,
     MaterialModule    
   ],
-  providers: [],
+  providers: [SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -16,7 +16,10 @@ import { Component, Input, Output, EventEmitter } from '@angular/core'
             <span>Country: {{ event.location.country }}</span>
         </div>
     </div>
-    `
+    `,
+    styles: [`
+    .thumbnail { min-height: 210px; }
+    `]
 })
 
 export class EventThumbnailCoponent{

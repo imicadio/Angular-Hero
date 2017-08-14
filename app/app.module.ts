@@ -11,12 +11,14 @@ import 'hammerjs';
 import { MaterialModule } from '@angular/material';
 import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnailCoponent } from './events/event-thumbnail.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EventsListComponent,
-    EventThumbnailCoponent
+    EventThumbnailCoponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

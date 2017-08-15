@@ -3,7 +3,6 @@ import { SharedService } from './shared/shared.service';
 import { ToastrService } from '../common/toastr.service'
 
 @Component({
-    selector: 'events-list',
     template: `
     <div>
         <h1>Upcoming Angular 2 Events!</h1>

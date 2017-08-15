@@ -13,6 +13,7 @@ import { EventsListComponent } from './events/events-list.component';
 import { EventThumbnailCoponent } from './events/event-thumbnail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SharedService } from './events/shared/shared.service';
+import { ToastrService } from './common/toastr.service'
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { SharedService } from './events/shared/shared.service';
     MdCheckboxModule,
     MaterialModule    
   ],
-  providers: [SharedService],
+  providers: [SharedService, ToastrService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

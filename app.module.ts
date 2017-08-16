@@ -19,6 +19,7 @@ import { EventDetailsComponent } from './events/event-details/event-details.comp
 import { appRoutes } from './routes';
 import { CreateEventComponent } from './events/create-event.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +27,7 @@ import { CreateEventComponent } from './events/create-event.component';
     EventThumbnailCoponent,
     NavbarComponent,
     EventDetailsComponent,
-    CreateEventComponent
+    CreateEventComponent,
   ],
   imports: [
     BrowserModule,

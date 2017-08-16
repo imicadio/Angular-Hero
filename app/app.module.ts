@@ -17,6 +17,9 @@ import { SharedService } from './events/shared/shared.service';
 import { ToastrService } from './common/toastr.service';
 import { EventDetailsComponent } from './events/event-details/event-details.component'
 import { appRoutes } from './routes'
+import { CreateEventComponent } from './events/create-event.component';
+import { ErrorComponent } from './error/error.component';
+import { EventRouteActivator } from './events/event-details/event-route-activator.service'
 
 @NgModule({
   declarations: [
@@ -24,7 +27,9 @@ import { appRoutes } from './routes'
     EventsListComponent,
     EventThumbnailCoponent,
     NavbarComponent,
-    EventDetailsComponent
+    EventDetailsComponent,
+    CreateEventComponent,
+    ErrorComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,7 @@ import { appRoutes } from './routes'
     MaterialModule,
     RouterModule.forRoot(appRoutes)  
   ],
-  providers: [SharedService, ToastrService],
+  providers: [SharedService, ToastrService, EventRouteActivator],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
